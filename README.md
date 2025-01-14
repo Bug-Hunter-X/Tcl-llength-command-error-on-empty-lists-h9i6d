@@ -1,0 +1,3 @@
+This repository demonstrates a common error in Tcl when using the llength command with an empty list. The `bug.tcl` file shows the error, while `bugSolution.tcl` provides a robust solution.
+
+The issue arises because `llength` throws an error if given an empty list. This can lead to unexpected behavior in functions designed to handle lists of varying lengths. The solution uses an `if` condition to explicitly check for an empty list before calling `llength`, avoiding the error.
